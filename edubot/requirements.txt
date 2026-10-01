@@ -1,0 +1,20 @@
+# EduBot — dependencias con versiones exactas.
+# Instalar con:  pip install -r requirements.txt
+# Python 3.10+ (numpy y scikit-learn usan la última versión compatible
+# con cada intérprete mediante marcadores de entorno PEP 508).
+
+# Algoritmos clásicos de NLP: TF-IDF + similitud coseno
+numpy==2.2.6 ; python_version < "3.11"
+numpy==2.4.6 ; python_version >= "3.11"
+scikit-learn==1.7.2 ; python_version < "3.11"
+scikit-learn==1.9.1 ; python_version >= "3.11"
+
+# Red neuronal (embeddings semánticos). Instala PyTorch como dependencia.
+# La primera ejecución descarga el modelo desde Hugging Face (~470 MB).
+sentence-transformers==6.1.0
+
+# Interfaz web
+streamlit==1.64.0
+
+# Pruebas unitarias
+pytest==9.1.1
