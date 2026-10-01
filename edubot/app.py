@@ -14,7 +14,16 @@ from __future__ import annotations
 import streamlit as st
 
 from chatbot import BotResponse, ConversationContext, EduBot
-from config import ENGINE_CHOICES, Settings
+from config import (
+    COURSE,
+    ENGINE_CHOICES,
+    FACULTY,
+    PROFESSOR,
+    SEMESTER,
+    TEAM_MEMBERS,
+    UNIVERSITY,
+    Settings,
+)
 from utils import EngineError, KnowledgeBaseError, is_model_cached, template
 from utils.embeddings import MODEL_SIZE_HINT
 
@@ -150,9 +159,24 @@ def render_sidebar(settings: Settings) -> str:
             st.session_state.messages = []
             st.session_state.context.reset()
             st.rerun()
+        render_team()
         st.markdown("### 💡 Temas")
         st.markdown(" · ".join(settings.topic_hints))
     return engine
+
+
+def render_team() -> None:
+    """Muestra los datos del equipo y de la materia en la barra lateral."""
+    st.markdown("### 👥 Equipo")
+    with st.expander("Información del equipo"):
+        st.markdown(
+            f"**{UNIVERSITY}**  \n{FACULTY}  \n{COURSE}  \n"
+            f"Semestre: {SEMESTER}  \nDocente: {PROFESSOR}"
+        )
+        rows = "\n".join(
+            f"| {name} | {student_id} | {group} |" for name, student_id, group in TEAM_MEMBERS
+        )
+        st.markdown(f"| Nombre | Matrícula | Brigada |\n|---|---|---|\n{rows}")
 
 
 def render_engine_status(bot: EduBot) -> None:

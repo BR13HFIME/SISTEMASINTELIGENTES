@@ -10,6 +10,40 @@ necesita que la pregunta coincida palabra por palabra con su base de
 conocimiento: entiende sinónimos, palabras reordenadas y paráfrasis, y cuando
 no está seguro dice "No entiendo" en lugar de inventar una respuesta.
 
+## 👥 Información del equipo
+
+**Universidad Autónoma de Nuevo León**
+Facultad de Ingeniería Mecánica y Eléctrica
+Laboratorio Temas Selectos de Sistemas Inteligentes
+
+- **Semestre:** Agosto - Diciembre 2026
+- **Docente:** Raquel Martinez Martinez
+- **Proyecto 1:** Chatbot de preguntas frecuentes con procesamiento de lenguaje natural
+
+| Nombre | Matrícula | Brigada |
+|---|---|---|
+| Jose David Meza Flores | 2069864 | 305 |
+| Jesús Arturo Corpus Zavala | 2132346 | No está inscrito |
+| Brian Horacio Reyna Diaz de León | 1995434 | 305 |
+| Victor Hugo Bernal Ríos | 2056233 | 305 |
+| Samuel Alejandro Manrique Mujica | 2132342 | 305 |
+
+## Propuesta del proyecto
+
+- **Problemática:** Los estudiantes de nuevo ingreso pierden tiempo buscando
+  respuestas a preguntas repetitivas sobre trámites escolares, porque la
+  información está dispersa.
+- **Propuesta:** Un chatbot de consola o interfaz web sencilla que recibe la
+  pregunta del estudiante en texto libre y responde con la información
+  correspondiente, aunque la pregunta no esté escrita exactamente igual que en
+  la base de datos de respuestas.
+- **Justificación como sistema inteligente:** Usa técnicas de procesamiento de
+  lenguaje natural (similitud de texto con TF-IDF y embeddings semánticos con
+  sentence-transformers) para interpretar el significado de la pregunta en
+  lugar de buscar coincidencias exactas de palabras. Esa comprensión
+  semántica, y no una simple búsqueda por palabra clave, es lo que lo
+  convierte en un sistema inteligente.
+
 ---
 
 ## Técnicas de Inteligencia Artificial

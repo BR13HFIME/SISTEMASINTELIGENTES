@@ -77,6 +77,23 @@ TOPIC_HINTS = (
 )
 
 
+# --- Información del equipo -------------------------------------------------
+UNIVERSITY = "Universidad Autónoma de Nuevo León"
+FACULTY = "Facultad de Ingeniería Mecánica y Eléctrica"
+COURSE = "Laboratorio Temas Selectos de Sistemas Inteligentes"
+SEMESTER = "Agosto - Diciembre 2026"
+PROFESSOR = "Raquel Martinez Martinez"
+
+# (nombre, matrícula, brigada)
+TEAM_MEMBERS = (
+    ("Jose David Meza Flores", "2069864", "305"),
+    ("Jesús Arturo Corpus Zavala", "2132346", "No está inscrito"),
+    ("Brian Horacio Reyna Diaz de León", "1995434", "305"),
+    ("Victor Hugo Bernal Ríos", "2056233", "305"),
+    ("Samuel Alejandro Manrique Mujica", "2132342", "305"),
+)
+
+
 @dataclass(frozen=True)
 class Settings:
     """Parámetros de ejecución de EduBot.
