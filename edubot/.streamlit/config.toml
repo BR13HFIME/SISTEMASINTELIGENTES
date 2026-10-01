@@ -1,0 +1,10 @@
+# Tema visual de EduBot con los colores institucionales de la UANL.
+[theme]
+base = "light"
+primaryColor = "#003366"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#EEF3F8"
+textColor = "#1F2937"
+
+[browser]
+gatherUsageStats = false

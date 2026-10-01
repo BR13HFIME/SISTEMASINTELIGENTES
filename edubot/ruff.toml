@@ -1,0 +1,13 @@
+# Reglas de estilo: PEP 8, orden de importaciones y docstrings estilo Google.
+line-length = 100
+target-version = "py310"
+
+[lint]
+select = ["E", "W", "F", "I", "B", "UP", "D"]
+
+[lint.pydocstyle]
+convention = "google"
+
+[lint.per-file-ignores]
+# Las pruebas se documentan con el nombre descriptivo de cada función.
+"tests/*" = ["D103"]
